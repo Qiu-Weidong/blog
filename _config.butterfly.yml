@@ -1015,7 +1015,10 @@ CDN:
 # 配置header特效
 special_effects:
   rain: 
+    enable: false
+    background: 'img/weather/bg5.png' # 必须使用png图片
+    flash: 'img/weather/lighting.png' # 必须使用png图片
+    weather: 'drizzle' # 有drizzle、rain、storm、sunny可供选择
+  matrix:
     enable: true
-    background: 'img/weather/bg5.png'
-    flash: 'img/weather/lighting.png'
-    weather: 'drizzle'
+    

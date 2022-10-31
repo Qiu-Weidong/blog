@@ -41,6 +41,10 @@ header#page-header(class=isHomeClass style=bg_img)
           image-bg-url=theme.special_effects.rain.background
           lighting-bg-url=theme.special_effects.rain.flash
           weather=theme.special_effects.rain.weather)
+      else if theme.special_effects.matrix.enable
+        div(class="rainslideshow")
+          canvas(width="1" height="1" id="matrix-container" style="position:absolute")
+        script(src="/js/matrix.min.js")
       #site-info
         h1#site-title=site_title
         if theme.subtitle.enable
