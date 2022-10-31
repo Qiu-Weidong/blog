@@ -1,0 +1,70 @@
+if !theme.disable_top_img && page.top_img !== false
+  if is_post()
+    - var top_img = page.top_img || page.cover || page.randomcover
+  else if is_page()
+    - var top_img = page.top_img || theme.default_top_img
+  else if is_tag()
+    - var top_img = theme.tag_per_img && theme.tag_per_img[page.tag] 
+    - top_img = top_img ? top_img : (theme.tag_img !== false ? theme.tag_img || theme.default_top_img : false)
+  else if is_category()
+    - var top_img = theme.category_per_img && theme.category_per_img[page.category]
+    - top_img = top_img ? top_img : (theme.category_img !== false ? theme.category_img || theme.default_top_img : false)
+  else if is_home()
+    - var top_img = theme.index_img !== false ? theme.index_img || theme.default_top_img : false
+  else if is_archive()
+    - var top_img = theme.archive_img !== false ? theme.archive_img || theme.default_top_img : false
+  else
+    - var top_img = page.top_img || theme.default_top_img
+
+  if top_img !== false
+    - var imgSource = top_img && top_img.indexOf('/') !== -1 ? `background-image: url('${url_for(top_img)}')` : `background: ${top_img}`
+    - var bg_img = top_img ? imgSource : ''
+    - var site_title = page.title || page.tag || page.category || config.title
+    - var isHomeClass = is_home() ? 'full_page' : 'not-home-page'
+    - is_post() ? isHomeClass = 'post-bg' : isHomeClass
+  else
+    - var isHomeClass = 'not-top-img'
+else
+  - var top_img = false
+  - var isHomeClass = 'not-top-img'
+
+header#page-header(class=isHomeClass style=bg_img)
+  !=partial('includes/header/nav', {}, {cache: true})
+  if top_img !== false
+    if is_post()
+      include ./post-info.pug
+    else if is_home() 
+      //- 导入script 和div canvas
+      div(class="rainslideshow")
+        canvas(width="1" height="1" id="container" style="position:absolute")
+        div(class="rainslide" id="slide-1" data-weather="rain")
+        div(class="rainslide" id="slide-2" data-weather="drizzle")
+        div(class="rainslide" id="slide-3" data-weather="sunny")
+        div(class="rainslide" id="slide-5" data-weather="storm")
+        div(class="rainslide" id="slide-4" data-weather="fallout")
+        nav(class="rainslideshow__nav")
+          a(class="rainnav-item" href="#slide-1")
+            i(class="icon icon--rainy")
+          a(class="rainnav-item" href="#slide-2")
+            i(class="icon icon--drizzle")
+          a(class="nav-item" href="#slide-3")
+            i(class="icon icon--sun")
+          a(class="nav-item" href="#slide-5")
+            i(class="icon icon--storm")
+          a(class="nav-item" href="#slide-4")
+            i(class="icon icon--radioactive")
+      script(src="/js/rain.min.js")
+      #site-info
+        h1#site-title=site_title
+        if theme.subtitle.enable
+          - var loadSubJs = true
+          #site-subtitle
+            span#subtitle
+        if(theme.social)
+          #site_social_icons
+            !=fragment_cache('social', function(){return partial('includes/header/social')})
+      #scroll-down
+        i.fas.fa-angle-down.scroll-down-effects
+    else
+      #page-site-info
+        h1#site-title=site_title

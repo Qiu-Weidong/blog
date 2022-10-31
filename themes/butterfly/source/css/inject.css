@@ -1,0 +1,49 @@
+/* 自定义的css写在这里 */
+.poem-container {
+    font-family:  '方正行楷繁体', '方正行楷简体', '华文行楷';
+    font-size: 1.2em;
+    margin: 1.6em 20px;
+    text-align: center;
+    background-color: transparent;
+    border-left: 0px;
+
+}
+
+blockquote  span{
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    /* cursor: pointer; */
+}
+
+blockquote span.active{
+    animation: smoke 4s linear forwards;
+    transform-origin: bottom;
+    user-select: text;
+}
+
+@keyframes smoke{
+    0%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+    }
+    30%{
+        opacity: 0;
+        filter: blur(20px);
+        transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+    
+    }
+}
+
+
+.rainslideshow {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
