@@ -34,26 +34,13 @@ header#page-header(class=isHomeClass style=bg_img)
     if is_post()
       include ./post-info.pug
     else if is_home() 
-      //- 导入script 和div canvas
-      div(class="rainslideshow")
-        canvas(width="1" height="1" id="container" style="position:absolute")
-        div(class="rainslide" id="slide-1" data-weather="rain")
-        div(class="rainslide" id="slide-2" data-weather="drizzle")
-        div(class="rainslide" id="slide-3" data-weather="sunny")
-        div(class="rainslide" id="slide-5" data-weather="storm")
-        div(class="rainslide" id="slide-4" data-weather="fallout")
-        nav(class="rainslideshow__nav")
-          a(class="rainnav-item" href="#slide-1")
-            i(class="icon icon--rainy")
-          a(class="rainnav-item" href="#slide-2")
-            i(class="icon icon--drizzle")
-          a(class="nav-item" href="#slide-3")
-            i(class="icon icon--sun")
-          a(class="nav-item" href="#slide-5")
-            i(class="icon icon--storm")
-          a(class="nav-item" href="#slide-4")
-            i(class="icon icon--radioactive")
-      script(src="/js/rain.min.js")
+      if theme.special_effects.rain.enable 
+        div(class="rainslideshow")
+          canvas(width="1" height="1" id="weather-container" style="position:absolute")
+        script(src="/js/rain.min.js" 
+          image-bg-url=theme.special_effects.rain.background
+          lighting-bg-url=theme.special_effects.rain.flash
+          weather=theme.special_effects.rain.weather)
       #site-info
         h1#site-title=site_title
         if theme.subtitle.enable
