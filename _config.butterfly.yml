@@ -1021,4 +1021,9 @@ special_effects:
     weather: 'drizzle' # 有drizzle、rain、storm、sunny可供选择
   matrix:
     enable: true
-    
+    background_img: 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/hacker/hacker6.jpg'
+    font_size: 24
+    font_name: '方正甲骨文'
+    char_set: '汉语'
+
+

@@ -44,7 +44,11 @@ header#page-header(class=isHomeClass style=bg_img)
       else if theme.special_effects.matrix.enable
         div(class="rainslideshow")
           canvas(width="1" height="1" id="matrix-container" style="position:absolute")
-        script(src="/js/matrix.min.js")
+        script(src="/js/matrix.min.js" 
+          background-img=theme.special_effects.matrix.background_img
+          font-name=theme.special_effects.matrix.font_name
+          char-set=theme.special_effects.matrix.char_set 
+          )
       #site-info
         h1#site-title=site_title
         if theme.subtitle.enable
