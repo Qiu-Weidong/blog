@@ -4,8 +4,9 @@ date: 2022-10-28 19:45:18
 tags:
   - blog
   - hexo
+  - butterfly
 categories:
-  - hexo
+  - [hexo, butterfly]
 ---
 
 这篇博客记载了我的个人博客的搭建过程。
