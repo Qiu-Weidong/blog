@@ -1,2 +1,9 @@
 .tag-cloud-list.is-center
   !=cloudTags({source: site.tags, minfontsize: 1.2, maxfontsize: 2.1, limit: 0, unit: 'em'})
+
+.tag-cloud-list.is-center
+  script(type="text/javascript" charset="utf-8" src="/js/tagcloud.js")
+  script(type="text/javascript" charset="utf-8" src="/js/tagcanvas.js")
+  canvas#resCanvas(align='center', width="785", height="785", style='width:100%;')
+    != tagcloud()
+
