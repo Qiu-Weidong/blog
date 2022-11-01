@@ -1012,13 +1012,13 @@ CDN:
 
 
 
-# 配置header特效
+# 配置header特效, 只能配置一个，如果前面的配置了，后面的将会忽略
 special_effects:
   rain: 
     enable: false
     background: 'img/weather/bg5.png' # 必须使用png图片
     flash: 'img/weather/lighting.png' # 必须使用png图片
-    weather: 'drizzle' # 有drizzle、rain、storm、sunny可供选择
+    weather: 'drizzle' # 有drizzle、rain、storm、sunny、fallout可供选择
   matrix:
     enable: false
     background_img: 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/hacker/hacker6.jpg'
