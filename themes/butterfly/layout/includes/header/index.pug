@@ -48,7 +48,11 @@ header#page-header(class=isHomeClass style=bg_img)
           background-img=theme.special_effects.matrix.background_img
           font-name=theme.special_effects.matrix.font_name
           char-set=theme.special_effects.matrix.char_set 
+          font-size=theme.special_effects.matrix.font_size
           )
+      else if theme.special_effects.star.enable 
+        div(class="rainslideshow" id="star-container")
+        script(src="/js/star.min.js")
       #site-info
         h1#site-title=site_title
         if theme.subtitle.enable

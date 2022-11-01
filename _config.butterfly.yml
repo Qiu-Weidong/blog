@@ -1020,10 +1020,12 @@ special_effects:
     flash: 'img/weather/lighting.png' # 必须使用png图片
     weather: 'drizzle' # 有drizzle、rain、storm、sunny可供选择
   matrix:
-    enable: true
+    enable: false
     background_img: 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/hacker/hacker6.jpg'
-    font_size: 24
-    font_name: '方正甲骨文'
-    char_set: '汉语'
+    font_size: 46
+    font_name: 'arial'
+    char_set: '阿拉伯语'
+  star:
+    enable: true
 
 
