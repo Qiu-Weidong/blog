@@ -1026,6 +1026,8 @@ special_effects:
     font_name: 'arial'
     char_set: '阿拉伯语'
   star:
+    enable: false
+  sakura:
     enable: true
 
 

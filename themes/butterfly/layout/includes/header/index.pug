@@ -53,6 +53,9 @@ header#page-header(class=isHomeClass style=bg_img)
       else if theme.special_effects.star.enable 
         div(class="rainslideshow" id="star-container")
         script(src="/js/star.min.js")
+      else if theme.special_effects.sakura.enable 
+        div(class="rainslideshow" id="sakura-container")
+        script(src="/js/sakura.js")
       #site-info
         h1#site-title=site_title
         if theme.subtitle.enable
