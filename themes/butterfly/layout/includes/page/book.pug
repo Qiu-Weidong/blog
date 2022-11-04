@@ -1,7 +1,11 @@
 #article-container
-  #book-container
-    //- 首先引入 pdf.js和pdf_viewer.js
-    canvas(id="book-canvas")
-    script(src="https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdfjs-dist/build/pdf.js")
-    script(src="/js/book.js" url=page.url)  
+  div(class="book-viewer")
+    div(class="read-wrapper")
+      //- 首先引入 pdf.js和pdf_viewer.js
+      canvas(id="book-canvas")
+      div(class="mask")
+        #prev(class="prev-page")
+        #next(class="next-page")
+      script(src="https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdfjs-dist/build/pdf.js")
+      script(src="/js/book.js" url=page.url turn=page.turn)  
   != page.content

@@ -47,3 +47,59 @@ blockquote span.active{
     overflow: hidden;
 }
 
+/* 一些book需要的css寫在這裏 */
+.book-viewer {
+    position: relative;
+}
+
+.book-viewer .read-wrapper{
+    position: relative;
+}
+
+.book-viewer .read-footer {
+    position: relative;
+    /* position: fixed; */
+    width: 100%;
+    height: 60px;
+}
+.book-viewer .read-footer .footer-prev {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 20%;
+    height: 100%;
+}
+.book-viewer .read-footer .footer-next {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 20%;
+    height: 100%;
+    text-align: right;
+}
+.book-viewer .read-wrapper .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.book-viewer .read-wrapper .mask .prev-page {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 20%;
+    height: 100%;    
+    cursor: pointer;
+}
+.book-viewer .read-wrapper .mask .next-page {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 20%;
+    height: 100%;  
+    cursor: pointer;
+}
+

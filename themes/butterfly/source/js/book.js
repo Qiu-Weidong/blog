@@ -3,6 +3,7 @@
 
 (function () {
     const url = document.currentScript.getAttribute('url');
+    const turn_direction = document.currentScript.getAttribute('turn') || 'left'; // 默认向左翻书
     if (!url || url === '') return;
     if (!pdfjsLib ||/* !pdfjsViewer */ !pdfjsLib.getDocument) {
         return alert('Please build the pdfjs-dist library using\n  `gulp dist-install`');
@@ -19,10 +20,6 @@
         canvas = document.getElementById('book-canvas'),
         ctx = canvas.getContext('2d');
 
-    /**
-     * Get page info from document, resize canvas accordingly, and render page.
-     * @param num Page number.
-     */
     function renderPage(num) {
         pageRendering = true;
         // Using promise to fetch the page
@@ -59,10 +56,6 @@
         });
     }
 
-    /**
-     * If another page rendering in progress, waits until the rendering is
-     * finished. Otherwise, executes rendering immediately.
-     */
     function queueRenderPage(num) {
         if (pageRendering) {
             pageNumPending = num;
@@ -71,30 +64,31 @@
         }
     }
 
-    /**
-     * Displays previous page.
-     */
     function onPrevPage() {
         if (pageNum <= 1) {
-            return;
+            return alert('已经是第一页了');
         }
         pageNum--;
         queueRenderPage(pageNum);
     }
-    // document.getElementById('prev').addEventListener('click', onPrevPage);
-
-    /**
-     * Displays next page.
-     */
+    
     function onNextPage() {
         if (pageNum >= pdfDoc.numPages) {
-            return;
+            return alert('已经是最后一页了') ;
         }
         pageNum++;
         queueRenderPage(pageNum);
     }
-    // document.getElementById('next').addEventListener('click', onNextPage);
-    canvas.addEventListener('click', onNextPage);
+
+    if(turn_direction !== 'right') {
+        document.getElementById('prev').addEventListener('click', onPrevPage);
+        document.getElementById('next').addEventListener('click', onNextPage);
+    }
+    else {
+        document.getElementById('next').addEventListener('click', onPrevPage);
+        document.getElementById('prev').addEventListener('click', onNextPage);
+    }
+    
     /**
      * Asynchronously downloads PDF.
      */
