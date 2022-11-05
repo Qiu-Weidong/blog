@@ -13,7 +13,7 @@ categories:
 却笑东风，从此便熏梅染柳，更没些闲，闲时又来镜里，转变朱颜。清愁不断，问何人会解连环。生怕见花开花落，朝来塞雁先还。 
 {% endpoem %}
 ## 效果预览
-![翻书效果图](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/turn.gif)
+![翻书效果图](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/turn2.gif)
 
 ## 实现代码
 {% codetabs 翻书效果实现代码 %}
