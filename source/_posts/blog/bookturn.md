@@ -14,7 +14,7 @@ categories:
 {% endpoem %}
 ## 效果预览
 ![翻书效果图](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/turn2.gif)
-
+![从右往左翻书效果](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/right.gif)
 ## 实现代码
 {% codetabs 翻书效果实现代码 %}
 <!-- tab lang:html -->
@@ -30,7 +30,9 @@ categories:
 		body {
 			background: #ccc;
 		}
-
+        *::-webkit-scrollbar {
+			display: none;
+		}
 		#magazine {
 			margin: auto;
 			width: 75%;
@@ -149,6 +151,9 @@ categories:
                         },
                     }
                 });
+
+                // 如果要从右往左翻书，则取消注释
+                $('#magazine').turn('page', pdfDoc.numPages);
             });
         });
     });
@@ -159,7 +164,10 @@ categories:
 
             const canvas = document.createElement('canvas');
             const ctx = canvas.getContext('2d');
-            pdfDoc.getPage(num).then(function (page) {
+
+            const realPage = num   ; // 从左往右翻书
+            // const realPage = pdfDoc.numPages - num + 1; // 從右邊往左翻書
+            pdfDoc.getPage(realPage).then(function (page) {
                 let viewport = page.getViewport({ scale: scale, });
                 // Support HiDPI-screens.
                 let outputScale = window.devicePixelRatio || 1;
