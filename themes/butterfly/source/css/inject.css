@@ -103,3 +103,37 @@ blockquote span.active{
     cursor: pointer;
 }
 
+#magazine {
+    width: 1152px;
+    /* height: 854px; */
+}
+
+#magazine .turn-page {
+    background-color: #ccc;
+    background-size: 100% 100%;
+}
+
+#magazine .loader {
+    background-image: url(./demos/bible/loader.gif);
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    top: 238px;
+    left: 188px;
+}
+
+#magazine .odd {
+    background-image: -webkit-linear-gradient(right, #FFF 95%, #ddd 100%);
+    background-image: -moz-linear-gradient(right, #FFF 95%, #ddd 100%);
+    background-image: -o-linear-gradient(right, #FFF 95%, #ddd 100%);
+    background-image: -ms-linear-gradient(right, #FFF 95%, #ddd 100%);
+
+}
+
+#magazine .even {
+    background-image: -webkit-linear-gradient(left, #FFF 95%, #ddd 100%);
+    background-image: -moz-linear-gradient(left, #FFF 95%, #ddd 100%);
+    background-image: -o-linear-gradient(left, #FFF 95%, #ddd 100%);
+    background-image: -ms-linear-gradient(left, #FFF 95%, #ddd 100%);
+}
