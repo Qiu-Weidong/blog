@@ -8,7 +8,10 @@ tags:
 categories:
   - JavaScript
 ---
-
+{% poem author:辛弃疾 source:青玉案·元夕 smoke:true %} 
+春已归来，看美人头上，袅袅春幡。无端风雨，未肯收尽余寒。年时燕子，料今宵梦到西园。浑未办，黄柑荐酒，更传青韭堆盘。 
+却笑东风，从此便熏梅染柳，更没些闲，闲时又来镜里，转变朱颜。清愁不断，问何人会解连环。生怕见花开花落，朝来塞雁先还。 
+{% endpoem %}
 ## 效果预览
 ![翻书效果图](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/turn.gif)
 
