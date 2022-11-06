@@ -1,6 +1,8 @@
 "use strict";
 
 (function () {
+    // 直接在这里设置一下 body 的背景颜色。
+    document.body.style.background = '#ccc';
     const url = document.currentScript.getAttribute('url');
     if (!url || url === '') {
         return alert('no book url');
@@ -33,6 +35,9 @@
         // 首先来个封面
         const cover = document.createElement('div');
         cover.className = 'hard cover';
+        cover.style.width = "80%";
+        cover.style.height = "80%";
+
         container.appendChild(cover);
         renderPage(1).then(canvas => {
             cover.appendChild(canvas);
@@ -45,6 +50,9 @@
 
             const cover2 = document.createElement('div');
             cover2.className = 'hard cover';
+            cover2.style.width = "80%";
+            cover2.style.height = "80%";
+            
             container.appendChild(cover2);
             renderPage(2).then(canvas => {
                 cover2.appendChild(canvas);
@@ -108,6 +116,9 @@
     function addPage(page, book) {
         if (!book.turn('hasPage', page)) {
             const element = document.createElement('div');
+            element.style.width = "80%";
+            element.style.height = "80%";
+
             element.innerHTML = '<i class="loader"></i>';
             book.turn('addPage', element, page);
             renderPage(page).then(canvas => { element.innerHTML = ''; element.appendChild(canvas); }); 

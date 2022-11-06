@@ -104,6 +104,7 @@ blockquote span.active{
 }
 
 #magazine {
+    margin: auto;
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -119,7 +120,7 @@ blockquote span.active{
 }
 
 #magazine .loader {
-    background-image: url(https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/resources/images/loader.gif);
+    background-image: url(https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/loader.gif);
     width: 24px;
     height: 24px;
     display: block;
