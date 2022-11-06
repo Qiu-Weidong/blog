@@ -20,8 +20,15 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
       #body-wrap(class=pageType)
         include ./header/index.pug
 
+        
         main#content-inner.layout(class=hideAside)
-          if body
+          if page.type === 'book'
+            script(src="https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdfjs-dist/build/pdf.js")
+            #magazine 
+            script( type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js")
+            script(src='http://www.turnjs.com/lib/turn.min.js')
+            script(src="/js/bookturn.js" url=page.url)
+          else if body
             div!= body
           else
             block content
