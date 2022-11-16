@@ -12,7 +12,11 @@ categories:
 <div class="js-pjax" id="posts-calendar" _echarts_instance_="ec_1668602527217" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; width: 770px; height: 284px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="770" height="284" style="position: absolute; left: 0px; top: 0px; width: 770px; height: 284px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgb(85, 85, 85); border-width: 1px; border-color: rgb(119, 119, 119); border-radius: 4px; color: rgb(255, 255, 255); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 10px; left: 607px; top: 119px; pointer-events: none;"><div style="font-size: 14px;">2022-08-21<br> ✒️文章 : 0</div></div></div>
 <script id="postsCalendar" data-pjax="">
     var color = '#6e7f98';
-    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
+    // var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
+    let color = document.documentElement.getAttribute('data-theme') === 'light' ? '#216e39' : '#43d55c';
+    let borderColor = document.documentElement.getAttribute('data-theme') === 'light' ? '#fff' : '#121212';
+    let colors = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
+    colors = document.documentElement.getAttribute('data-theme') !== 'light' ? ['#161b22', '#0e4429', '#006d32', '#26a641', '#43d55c'] : colors;
     let postsCalendar = echarts.init(document.getElementById('posts-calendar'));
     let postsCalendarOption = {
         title: {
@@ -40,7 +44,7 @@ categories:
             calculable: true,
             inRange: {
                 symbol: 'rect',
-                color: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127']
+                color: colors
             },
             itemWidth: 12,
             itemHeight: 12,
@@ -57,11 +61,11 @@ categories:
             range: ["2021-11-16", "2022-11-16"],
             cellSize: [13, 13],
             splitLine: {
-                show: false
+                show: true
             },
             itemStyle: {
                 color: color,
-                borderColor: '#fff',
+                borderColor: borderColor,
                 borderWidth: 2
             },
             yearLabel: {
