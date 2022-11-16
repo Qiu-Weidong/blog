@@ -13,7 +13,7 @@ categories:
 <script id="postsCalendar" data-pjax="">
     var color = '#6e7f98';
     // var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
-    let color = document.documentElement.getAttribute('data-theme') === 'light' ? '#216e39' : '#43d55c';
+    color = document.documentElement.getAttribute('data-theme') === 'light' ? '#216e39' : '#43d55c';
     let borderColor = document.documentElement.getAttribute('data-theme') === 'light' ? '#fff' : '#121212';
     let colors = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
     colors = document.documentElement.getAttribute('data-theme') !== 'light' ? ['#161b22', '#0e4429', '#006d32', '#26a641', '#43d55c'] : colors;
