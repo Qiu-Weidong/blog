@@ -103,3 +103,16 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+#see https://www.npmjs.com/package/hexo-butterfly-charts
+charts:
+  enable: true
+  postsChart:
+    title: 文章發佈統計 
+    interval: 1
+  tagsChart:
+    title: Top 10 tags 
+    interval: 1 
+  postsCalendar_Title: 文章發佈日曆
+  categoriesChart_Title: 分類統計
+  categoriesRadar_Title: 分類雷達
