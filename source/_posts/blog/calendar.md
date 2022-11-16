@@ -101,7 +101,8 @@ categories:
 
 
 ## 图片预览
-
+![浅色模式](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/calendar/light.jpg)
+![深色模式](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/calendar/dark.jpg)
 ## 配置步骤
 首先安装`hexo-butterfly-charts`。
 ```shell
