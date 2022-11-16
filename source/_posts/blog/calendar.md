@@ -100,6 +100,8 @@ categories:
 
 
 
+## 图片预览
+
 ## 配置步骤
 首先安装`hexo-butterfly-charts`。
 ```shell
