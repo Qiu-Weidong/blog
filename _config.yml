@@ -102,7 +102,9 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repo: https://github.com/Qiu-Weidong/Qiu-Weidong.github.io.git
+  branch: main
 
 #see https://www.npmjs.com/package/hexo-butterfly-charts
 charts:
