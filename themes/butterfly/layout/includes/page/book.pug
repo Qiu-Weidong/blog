@@ -1,18 +1,12 @@
 #book-container
   script(src="https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdfjs-dist/build/pdf.js")
-  if page.special_effect 
-    #magazine 
-    script( type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js")
-    script(src='http://www.turnjs.com/lib/turn.min.js')
-    script(src="/js/bookturn.js" url=page.url)
-  else
-    div(class="book-viewer")
-      div(class="read-wrapper")
-        //- 首先引入 pdf.js和pdf_viewer.js
-        canvas(id="book-canvas")
-        div(class="mask")
-          #prev(class="prev-page")
-          #next(class="next-page")
-        script(src="/js/book.js" url=page.url turn=page.turn)  
+  div(class="book-viewer")
+    div(class="read-wrapper")
+      //- 首先引入 pdf.js和pdf_viewer.js
+      canvas(id="book-canvas")
+      div(class="mask")
+        #prev(class="prev-page")
+        #next(class="next-page")
+      script(src="/js/book.js" url=page.url turn=page.turn)  
   
   //- != page.content
