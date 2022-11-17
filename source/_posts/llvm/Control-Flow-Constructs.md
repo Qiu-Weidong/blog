@@ -65,7 +65,7 @@ digraph "CFG for 'max' function" {
 }
 ```
 可以通过`dot -Tjpg .\.max.dot -o main.jpg`命令来生成控制流图，`dot`的安装可以参考博客[graphviz安装教程](https://qiu-weidong.github.io/2022/04/30/graphviz/start/)。生成的控制流图如下图所示。
-![max函数的控制流图](https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/llvm/cfg.jpg)
+![max函数的控制流图](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/llvm/cfg.jpg)
 LLVM IR 是一种相当丰富的中间代码格式。 因此，当以更高的优化级别编译上述代码段时，LLVM 将优化代码以使用 select 指令 (详见[LangRef: select](http://llvm.org/docs/LangRef.html#select-instruction)) 而不是生成分支。 选择指令只是根据布尔条件在两个值之间进行选择。 这大大缩短了代码。
 ```llvm
 define i32 @max(i32 %a, i32 %b) {

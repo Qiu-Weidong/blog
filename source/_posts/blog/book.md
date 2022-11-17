@@ -40,7 +40,7 @@ categories:
 
 </div>
 <script>
-    var url = 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/pdf/周髀程式释注.pdf'
+    var url = 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdf/周髀程式释注.pdf'
 </script>
 <script src="/js/book.js" ></script>
 
@@ -200,7 +200,7 @@ categories:
 
 </div>
 <script>
-    var url = 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/pdf/周髀程式释注.pdf'
+    var url = 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdf/周髀程式释注.pdf'
 </script>
 <script src="/js/book.js" ></script>
 ```

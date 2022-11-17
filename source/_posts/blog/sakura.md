@@ -11,7 +11,7 @@ description: 这篇博客实现了一种樱花飘落的特效
 ---
 ## 效果预览
 {% raw %}
-<div id="preview-container" style="background-image:url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/%E5%A3%81%E7%BA%B8/wallhaven-o3mmpp.jpg'); background-size:100%; height:400px;">
+<div id="preview-container" style="background-image:url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/%E5%A3%81%E7%BA%B8/wallhaven-o3mmpp.jpg'); background-size:100%; height:400px;">
 </div>
 <script>
     var stop, staticx;
@@ -344,7 +344,7 @@ description: 这篇博客实现了一种樱花飘落的特效
 </body>
 <style>
     .container {
-        background-image: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/%E5%A3%81%E7%BA%B8/wallhaven-6o1g8x.jpg');
+        background-image: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/%E5%A3%81%E7%BA%B8/wallhaven-6o1g8x.jpg');
         background-size: 100%;
         height: 540px;
         background-color: black;

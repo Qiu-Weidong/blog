@@ -47,7 +47,7 @@ categories:
     3 0 1 2 
 ## 样例解释
 如图，中间的图画代表城池，城池外面的折线箭头以及上面的 {% label 黑色 %} 数字代表坐标系，{% label 灰色 %} 的数字代表城门的编号，{% label 红色 red %} 的点表示攻城的匈奴军队，而 {% label 绿色 green %} 的点表示救援的骑兵。
-![匈奴犯境](https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/FlZlzl6bQw-5Rp_HNQyTtwVetoIg.png)
+![匈奴犯境](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/FlZlzl6bQw-5Rp_HNQyTtwVetoIg.png)
 
 **图①**中骑兵正在向$3$号城门奔袭，$3$号城门的距离是$1$，由于骑兵的前进速度为每个单位时间移动单位距离，于是，骑兵到达$3$号城门花费了$1$个单位时间，又因为匈奴军队单位时间攻城对城池造成的损失等于攻城的人数，因此在骑兵到达3号城门的时候，匈奴造成的损失为$(3+4+7+3) \times 1=17$。
 

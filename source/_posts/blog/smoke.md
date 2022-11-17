@@ -45,7 +45,7 @@ description: 这篇博客使用css实现了文字变成烟雾的效果
         height: 440px;
         /* height: 100vh; */
         background-color: #111;
-        background-image: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/hacker/hacker0.jfif');
+        background-image: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/hacker/hacker0.jfif');
         background-size: 100%;
         overflow: hidden;
     }
@@ -93,7 +93,7 @@ description: 这篇博客使用css实现了文字变成烟雾的效果
 
 {% endraw %}
 ## gif预览
-![文字烟雾效果](https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/烟雾.gif)
+![文字烟雾效果](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/烟雾.gif)
 ## 具体代码
 {% codeblock lang:html %}
 <!DOCTYPE html>
@@ -139,7 +139,7 @@ description: 这篇博客使用css实现了文字变成烟雾的效果
         height: 440px;
         /* height: 100vh; */
         /* background-color: #111; */
-        background-image: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/matrix/wallhaven-e72xro.jpg');
+        background-image: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/matrix/wallhaven-e72xro.jpg');
         background-size: 100%;
         overflow: hidden;
     }
@@ -187,18 +187,18 @@ description: 这篇博客使用css实现了文字变成烟雾的效果
     @font-face {
         font-family: '甲骨文';
         font-display: swap;
-        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/fonts/FZJiaGW.TTF') format('truetype');
+        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/FZJiaGW.TTF') format('truetype');
     }
 
     @font-face {
         font-family: '小篆';
-        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/fonts/FZXZTFW.TTF');
+        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/FZXZTFW.TTF');
     }
 
     @font-face {
         font-family: '大篆';
         font-display: swap;
-        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/fonts/STFJinWDZFU.TTF');
+        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/STFJinWDZFU.TTF');
     }
 </style>
 

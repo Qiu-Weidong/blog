@@ -12,7 +12,7 @@ description: 当鼠标滑过图片的时候，会有星星追随它。
 ## 效果预览
 鼠标滑过下图的时候，会有星星追随。
 {% raw %}
-<div id="preview-container" style="background-image:url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/%E5%A3%81%E7%BA%B8/wallhaven-6o1g8x.jpg'); background-size:100%; height:400px;">
+<div id="preview-container" style="background-image:url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/%E5%A3%81%E7%BA%B8/wallhaven-6o1g8x.jpg'); background-size:100%; height:400px;">
 </div>
 <script>
     const container = document.getElementById('preview-container');
@@ -173,7 +173,7 @@ description: 当鼠标滑过图片的时候，会有星星追随它。
 
 <body>
     <div id="preview-container" class="container">
-        <!-- <img src="https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/matrix/wallhaven-e72xro.jpg" alt="您要的图碎了"> -->
+        <!-- <img src="https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/matrix/wallhaven-e72xro.jpg" alt="您要的图碎了"> -->
     </div>
     <script>
         const container = document.getElementById('preview-container');
@@ -320,7 +320,7 @@ description: 当鼠标滑过图片的时候，会有星星追随它。
 </body>
 <style>
     .container {
-        background-image: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/pictures/images/%E5%A3%81%E7%BA%B8/wallhaven-6o1g8x.jpg');
+        background-image: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/%E5%A3%81%E7%BA%B8/wallhaven-6o1g8x.jpg');
         background-size: 100%;
         height: 640px;
         background-color: black;
