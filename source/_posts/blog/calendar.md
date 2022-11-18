@@ -6,7 +6,7 @@ tags:
   - hexo
   - butterfly
 categories:
-  - hexo
+  - [hexo, butterfly]
 ---
 ## 效果预览
 <div class="js-pjax" id="posts-calendar" _echarts_instance_="ec_1668602527217" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; width: 770px; height: 284px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="770" height="284" style="position: absolute; left: 0px; top: 0px; width: 770px; height: 284px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgb(85, 85, 85); border-width: 1px; border-color: rgb(119, 119, 119); border-radius: 4px; color: rgb(255, 255, 255); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 10px; left: 607px; top: 119px; pointer-events: none;"><div style="font-size: 14px;">2022-08-21<br> ✒️文章 : 0</div></div></div>
