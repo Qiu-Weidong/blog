@@ -874,7 +874,7 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
@@ -1018,16 +1018,16 @@ special_effects:
     enable: false
     background: 'img/weather/bg5.png' # 必须使用png图片
     flash: 'img/weather/lighting.png' # 必须使用png图片
-    weather: 'drizzle' # 有drizzle、rain、storm、sunny、fallout可供选择
+    weather: 'sunny' # 有drizzle、rain、storm、sunny、fallout可供选择
   matrix:
-    enable: false
+    enable: false 
     background_img: 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/hacker/hacker6.jpg'
-    font_size: 46
+    font_size: 36
     font_name: 'arial'
     char_set: '阿拉伯语'
   star:
-    enable: false
-  sakura:
     enable: true
+  sakura:
+    enable: false
 
 
