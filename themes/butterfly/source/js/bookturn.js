@@ -12,13 +12,13 @@
     }
 
     pdfjsLib.GlobalWorkerOptions.workerSrc =
-        "https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdfjs-dist/build/pdf.worker.min.js";
+        "https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/pdfjs-dist/build/pdf.worker.min.js";
 
     // queue是一个 [number], 保存了等待渲染的页码。
     let pdfDoc = null, scale = 1.5;
     const container = document.getElementById('magazine');
 
-    const CMAP_URL = "https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdfjs-dist/cmaps/";
+    const CMAP_URL = "https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/pdfjs-dist/cmaps/";
     const CMAP_PACKED = true;
     const ENABLE_XFA = true;
     let loadingTask = pdfjsLib.getDocument({

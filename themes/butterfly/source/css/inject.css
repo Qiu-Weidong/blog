@@ -118,7 +118,7 @@ blockquote span.active{
 }
 
 #magazine .loader {
-    background-image: url(https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/loader.gif);
+    background-image: url(https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/loader.gif);
     width: 24px;
     height: 24px;
     display: block;

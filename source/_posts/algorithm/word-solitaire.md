@@ -49,7 +49,7 @@ $n \leq 1000$，每个单词的长度大于2且不超过15个字符
 ## 问题分析
 该问题可以转换为一个图论问题，将每个单词视为一条从该单词的第一个字母指向该单词的最后一个字母的有向边。例如，可以将 {% label abandon %} 视为从顶点`a`指向顶点`n`的一条有向边。这样，该问题就转换为了求经过所有边恰好一次的一条回路，这种问题在图论中被称为欧拉回路问题。
 以示例2中的输入为例，可以得到如下的一个有向图
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/graphviz/hello.jpg)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/graphviz/hello.jpg)
 
 ## 具体实现
 {% codeblock lang:cpp %}

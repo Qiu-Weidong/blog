@@ -13,8 +13,8 @@ categories:
 却笑东风，从此便熏梅染柳，更没些闲，闲时又来镜里，转变朱颜。清愁不断，问何人会解连环。生怕见花开花落，朝来塞雁先还。 
 {% endpoem %}
 ## 效果预览
-![翻书效果图](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/turn2.gif)
-![从右往左翻书效果](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/right.gif)
+![翻书效果图](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/turn2.gif)
+![从右往左翻书效果](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/right.gif)
 ## 实现代码
 {% codetabs 翻书效果实现代码 %}
 <!-- tab lang:html -->
@@ -24,7 +24,7 @@ categories:
 <head>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src='http://www.turnjs.com/lib/turn.min.js'></script>
-	<script src="https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdfjs-dist/build/pdf.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/pdfjs-dist/build/pdf.js"></script>
 
 	<style type="text/css">
 		body {
@@ -44,7 +44,7 @@ categories:
 		}
 
 		#magazine .loader {
-			background-image: url(https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/loader.gif);
+			background-image: url(https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/loader.gif);
 			width: 24px;
 			height: 24px;
 			display: block;
@@ -87,20 +87,20 @@ categories:
 <!-- tab lang:javascript -->
 
 (function () {
-    const url = 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdf/The Definitive ANTLR 4 Reference, 2nd Edition.pdf'; //你要放的pdf檔
+    const url = 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/pdf/The Definitive ANTLR 4 Reference, 2nd Edition.pdf'; //你要放的pdf檔
     // const url = './周髀程式释注.pdf';
     if (!pdfjsLib ||/* !pdfjsViewer */ !pdfjsLib.getDocument) {
         return alert('Please build the pdfjs-dist library using\n  `gulp dist-install`');
     }
 
     pdfjsLib.GlobalWorkerOptions.workerSrc =
-        "https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdfjs-dist/build/pdf.worker.min.js";
+        "https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/pdfjs-dist/build/pdf.worker.min.js";
 
     // queue是一个 [number], 保存了等待渲染的页码。
     let pdfDoc = null, scale = 1.5;
     const container = document.getElementById('magazine');
 
-    const CMAP_URL = "https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdfjs-dist/cmaps/";
+    const CMAP_URL = "https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/pdfjs-dist/cmaps/";
     const CMAP_PACKED = true;
     const ENABLE_XFA = true;
     let loadingTask = pdfjsLib.getDocument({

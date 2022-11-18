@@ -23,7 +23,7 @@ description: '这篇博客使用不同的语言和字符实现了一个类似于
 
     const container = document.getElementById("preview-container");
     
-    const base_path = 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/hacker/';
+    const base_path = 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/hacker/';
     // 字符集
     const Arab = 'ابتثجحخدذرزسشضصضطظعغفقكلمنهويء'; // 阿拉伯语
     const Hebrew = 'אבגדהוזחטיךכלםמןנסעףפץצקרשתבכפּתּוּואֽאֿשׁשׂוֹ'; // 希伯来语
@@ -234,16 +234,16 @@ description: '这篇博客使用不同的语言和字符实现了一个类似于
 ## gif预览
 
 {% gallery %}
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/黑客帝国代码雨效果图/阿拉伯语.gif)
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/黑客帝国代码雨效果图/西里尔字母.gif)
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/黑客帝国代码雨效果图/藏语.gif)
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/黑客帝国代码雨效果图/日语.gif)
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/黑客帝国代码雨效果图/希伯来语.gif)
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/黑客帝国代码雨效果图/彝文.gif)
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/黑客帝国代码雨效果图/甲骨文.gif)
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/黑客帝国代码雨效果图/印地语.gif)
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/黑客帝国代码雨效果图/小篆.gif)
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/黑客帝国代码雨效果图/大篆.gif)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/黑客帝国代码雨效果图/阿拉伯语.gif)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/黑客帝国代码雨效果图/西里尔字母.gif)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/黑客帝国代码雨效果图/藏语.gif)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/黑客帝国代码雨效果图/日语.gif)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/黑客帝国代码雨效果图/希伯来语.gif)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/黑客帝国代码雨效果图/彝文.gif)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/黑客帝国代码雨效果图/甲骨文.gif)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/黑客帝国代码雨效果图/印地语.gif)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/黑客帝国代码雨效果图/小篆.gif)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/黑客帝国代码雨效果图/大篆.gif)
 
 {% endgallery %}
 
@@ -269,7 +269,7 @@ description: '这篇博客使用不同的语言和字符实现了一个类似于
         const characterSet = getArabCharacterSet(); // 修改这里可以设置字符集
 
         let img = document.createElement('img');
-        img.src = 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/hacker/hacker6.jpg';
+        img.src = 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/hacker/hacker6.jpg';
         img.alt = '您要的图碎了';
         const canvas = document.createElement("canvas");
         canvas.style.cssText = 'width:100%;';
@@ -410,18 +410,18 @@ description: '这篇博客使用不同的语言和字符实现了一个类似于
     @font-face {
         font-family: '甲骨文';
         font-display: swap;
-        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/FZJiaGW.TTF') format('truetype');
+        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/fonts/FZJiaGW.TTF') format('truetype');
     }
 
     @font-face {
         font-family: '小篆';
-        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/FZXZTFW.TTF');
+        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/fonts/FZXZTFW.TTF');
     }
 
     @font-face {
         font-family: '大篆';
         font-display: swap;
-        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/STFJinWDZFU.TTF');
+        src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/fonts/STFJinWDZFU.TTF');
     }
 </style>
 

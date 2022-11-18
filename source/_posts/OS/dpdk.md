@@ -28,7 +28,7 @@ categories:
  - **充分利用硬件性能**，充分利用SIMD等技术以及网卡加速。
 ## DPDK的基本架构
 dpdk的基本架构图如下所示：
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/dpdk.png)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/dpdk.png)
 dpdk由很多的组件库组成，主要包括核心部件库(core libararies)、平台相关模块(platform)、网卡轮询模式驱动模块(PMD-natives & virtual)、QoS库、报文转发分类算法(classify)等。
 
 位于linux kernel中的两个模块 {% label KNI %} 和 {% label IGB_UIO %} 。其中 {% label KNI %} 提供了使用linux kernel的内核协议栈和一些网络工具的接口。而 {% label IGB_UIO %} 则利用了UIO(linux User IO)技术，将网卡硬件寄存器映射到用户态。

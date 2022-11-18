@@ -10,7 +10,7 @@
     }
 
     pdfjsLib.GlobalWorkerOptions.workerSrc =
-        "https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdfjs-dist/build/pdf.worker.min.js";
+        "https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/pdfjs-dist/build/pdf.worker.min.js";
 
     let pdfDoc = null,
         pageNum = 1,
@@ -92,7 +92,7 @@
     /**
      * Asynchronously downloads PDF.
      */
-    const CMAP_URL = "https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/pdfjs-dist/cmaps/";
+    const CMAP_URL = "https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/pdfjs-dist/cmaps/";
     const CMAP_PACKED = true;
     const ENABLE_XFA = true;
     var loadingTask = pdfjsLib.getDocument({

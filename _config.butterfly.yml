@@ -80,24 +80,24 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/icon.png
+favicon: https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/icon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/matrix/wallhaven-5dpy80.jpg
+  img: https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/matrix/wallhaven-5dpy80.jpg
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-j8m2gm.jpg
+index_img: https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-j8m2gm.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-57ogy3.jpg
+default_top_img: https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-57ogy3.jpg
 
 # The banner image of archive page
-archive_img: https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/%E5%A3%81%E7%BA%B8/wallhaven-nkd1ed.jpg
+archive_img: https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/%E5%A3%81%E7%BA%B8/wallhaven-nkd1ed.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
@@ -127,42 +127,42 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/brige.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/leosng.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/maintain.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/moon.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-0w578q.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-28x98g.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-47z5vy.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-57ogy3.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-6o1g8x.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-727ge3.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-72k2jv.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-72k3jy.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-72kvoo.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-8oev1j.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-8ow38k.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-e7ly7k.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-e7qy3o.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-g7g8rd.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-g7klj3.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-j3v2j5.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-j8m2gm.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-m96dl8.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-m9eqg9.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-m9md18.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-nkd1ed.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-o3mmpp.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-pkp8l3.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-rdxwkw.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-v915jl.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-v9lp9p.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-x1gw83.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-x8gl8v.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-x8ye3z.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-x8ywqz.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/wallhaven-zxle9g.jpg
-    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/哈尔施塔特.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/brige.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/leosng.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/maintain.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/moon.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-0w578q.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-28x98g.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-47z5vy.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-57ogy3.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-6o1g8x.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-727ge3.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-72k2jv.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-72k3jy.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-72kvoo.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-8oev1j.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-8ow38k.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-e7ly7k.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-e7qy3o.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-g7g8rd.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-g7klj3.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-j3v2j5.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-j8m2gm.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-m96dl8.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-m9eqg9.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-m9md18.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-nkd1ed.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-o3mmpp.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-pkp8l3.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-rdxwkw.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-v915jl.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-v9lp9p.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-x1gw83.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-x8gl8v.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-x8ye3z.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-x8ywqz.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/wallhaven-zxle9g.jpg
+    - https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/哈尔施塔特.jpg
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 
@@ -564,7 +564,7 @@ tag_ui: # 留空或 index
 background:
 
 # Footer Background
-footer_bg: 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/壁纸/moon.jpg'
+footer_bg: 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/壁纸/moon.jpg'
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -1020,13 +1020,13 @@ special_effects:
     flash: 'img/weather/lighting.png' # 必须使用png图片
     weather: 'sunny' # 有drizzle、rain、storm、sunny、fallout可供选择
   matrix:
-    enable: false 
-    background_img: 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/hacker/hacker6.jpg'
+    enable: true 
+    background_img: 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/hacker/hacker6.jpg'
     font_size: 36
     font_name: 'arial'
     char_set: '阿拉伯语'
   star:
-    enable: true
+    enable: false
   sakura:
     enable: false
 
