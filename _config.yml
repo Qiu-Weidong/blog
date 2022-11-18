@@ -125,3 +125,11 @@ markdown:
       name: '@neilsustc/markdown-it-katex'
       options:
         strict: false
+
+
+algolia:
+  applicationID: "MJER6XSEIB" #AppID
+  apiKey: "d65be3a3ed63d35a2e21621ec349b88b" #刚刚新建的API Key
+  adminApiKey: "728b8a8338bf2ef2c3922169e281f10a" #Admin API Key
+  indexName: "hexo" #这个就是Indices填的
+  chunkSize: 5000
