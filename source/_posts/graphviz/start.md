@@ -21,7 +21,7 @@ sudo apt install graphviz
 首先下载安装程序，下载地址: [https://graphviz.org/download/](https://graphviz.org/download/)。
 找到对应的安装程序，笔者这里选择的是`graphviz-3.0.0 (64-bit) EXE installer [sha256]`。
 下载后运行安装程序，当询问是否添加环境变量时选择添加当前用户。
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/graphviz/添加环境变量.JPG)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/graphviz/添加环境变量.JPG)
 然后一路下一步即可。
 
 安装完成后，打开终端，输入命令
@@ -29,7 +29,7 @@ sudo apt install graphviz
 dot -version
 ```
 出现下图所示的结果，表明安装成功。
-![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/graphviz/安装成功.JPG)
+![](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/graphviz/安装成功.JPG)
 ## 测试graphviz
 新建一个文本文件，命名为`main.dot`。然后将下面的内容复制到`main.dot`。
 ```dot
@@ -46,4 +46,4 @@ digraph {
 dot -Tpng main.dot -o main.png
 ```
 生成的结果如下图所示:
-![main.png](https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/images/graphviz/main.png)
+![main.png](https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/graphviz/main.png)

@@ -1,49 +1,49 @@
 @font-face {
     font-family: '方正行楷繁体';
     font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/方正行楷繁体.TTF') format("truetype");
+    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/fonts/方正行楷繁体.TTF') format("truetype");
 }
 
 @font-face {
     font-family: '方正行楷简体';
     font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/方正行楷简体.TTF') format("truetype");
+    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/fonts/方正行楷简体.TTF') format("truetype");
 }
 
 @font-face {
     font-family: '方正硬笔行书简体';
     font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/方正硬笔行书简体.TTF') format("truetype");
+    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/fonts/方正硬笔行书简体.TTF') format("truetype");
 }
 
 @font-face {
     font-family: '汉仪行楷繁';
     font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/汉仪行楷繁.ttf') format("truetype");
+    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/fonts/汉仪行楷繁.ttf') format("truetype");
 }
 
 
 @font-face {
     font-family: '华文行楷';
     font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/华文行楷.ttf') format("truetype");
+    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/fonts/华文行楷.ttf') format("truetype");
 }
 
 @font-face {
     font-family: '方正甲骨文';
     font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/FZJiaGW.TTF') format('truetype');
+    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/fonts/FZJiaGW.TTF') format('truetype');
 }
 
 @font-face {
     font-family: '小篆';
-    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/FZXZTFW.TTF');
+    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/fonts/FZXZTFW.TTF');
 }
 
 @font-face {
     font-family: '大篆';
     font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/rain/resources/fonts/STFJinWDZFU.TTF');
+    src: url('https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/fonts/STFJinWDZFU.TTF');
 }
 
 
