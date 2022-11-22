@@ -15,6 +15,9 @@ sudo apt install openjdk-8-jdk
 ```
 ### windows安装java
 首先从[官网](https://www.oracle.com/java/technologies/downloads/#jdk18-windows)下载java安装包。
+## antlr4安装
+略
+## 命令行别名配置
 
 ## grun的常用选项
   - **tokens** 打印出记号流。
