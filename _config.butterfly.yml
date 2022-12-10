@@ -1020,7 +1020,7 @@ special_effects:
     flash: 'img/weather/lighting.png' # 必须使用png图片
     weather: 'sunny' # 有drizzle、rain、storm、sunny、fallout可供选择
   matrix:
-    enable: true 
+    enable: false 
     background_img: 'https://cdn.jsdelivr.net/gh/Qiu-Weidong/blog/resources/images/hacker/hacker6.jpg'
     font_size: 36
     font_name: 'arial'
@@ -1028,6 +1028,6 @@ special_effects:
   star:
     enable: false
   sakura:
-    enable: false
+    enable: true
 
 
