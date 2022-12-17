@@ -256,5 +256,40 @@ print(soup.select("#list li"))
 
 ## 方法选择
 
+函数签名
+```python
+find_all(name, attrs, recursive, text, **kwargs)
+```
+### name参数
+`name` 参数可以是一个字符串、一个正则表达式、一个字符串列表以及True。
+```python
+from bs4 import BeautifulSoup
+html_str = '''
+<html><body><span>123<span>456</span>789</span></body></html>
+'''
+
+soup = BeautifulSoup(html_str, 'lxml')
+
+soup.body.find_all('span')
+# [<span>123<span>456</span>789</span>, <span>456</span>]
+```
+### attrs参数
+```python
+html_str = '''
+<html><body><div id='container' class='hello' ><span id='spaner'>spider</span><span id='beautiful'>beautiful</span>
+</div></body></html>
+'''
+
+soup = BeautifulSoup(html_str, 'lxml')
+soup.body.find_all(id='container')
+# [<div class="hello" id="container"><span id="spaner">spider</span><span id="beautiful">beautiful</span> </div>]
+soup.body.find_all(attrs={"id":'container'})
+# [<div class="hello" id="container"><span id="spaner">spider</span><span id="beautiful">beautiful</span> </div>]
+
+soup.body.find_all(class_='hello')
+# [<div class="hello" id="container"><span id="spaner">spider</span><span id="beautiful">beautiful</span> </div>]
+```
+### text参数
+查询含有接收文本的标签
 
 
