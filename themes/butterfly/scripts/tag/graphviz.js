@@ -15,34 +15,31 @@ let viz = new Viz({ Module, render });
 //     }
 // }
 
-const graphvizTab = (args, content) => {
-    return new Promise(
-        (resolve, reject) => {
-            viz.renderString(content).then(result => {
-            
-            
-                resolve(`<div
-                style="margin: 0 0 20px; 
-                text-align: center;"
-                >${result}</div>`);
-            
-            
-            }).catch(error => {
-            
-                viz = new Viz({Module, render});
-                console.log(error);
-                resolve(`<div
-                style="margin: 0 0 20px; 
-                text-align: center;"
-                >${error}</div>`);
-            
-            
-            })
-        }
-    )
-    
+const graphvizTab = async (args, content) => {
+
+    try {
+        const result = await viz.renderString(content);
+        return `<div
+                    style="margin: 0 0 20px; 
+                    text-align: center;"
+                    >${result}</div>`;
+    } catch (error) {
+        console.log(error);
+        viz = new Viz({ Module, render });
+        return `<div
+                    style="margin: 0 0 20px; 
+                    text-align: center;"
+                    >
+                    ${content}
+                    <b>${error}</b>
+                    
+                    </div>`;
+    }
+
 }
 
 hexo.extend.tag.register('graphviz', graphvizTab, { ends: true, async: true });
+
+
 
 

@@ -16,6 +16,9 @@ digraph { c -> d }
 
 
 {% graphviz %}
-digraph { c -> m }
+digraph { c -> b; a -> b; }
 {% endgraphviz %}
 
+{% graphviz %}
+digraph { c -> b; a -> b; a -> k; a -> h; b -> h; }
+{% endgraphviz %}
