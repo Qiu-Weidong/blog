@@ -129,16 +129,166 @@ PREPROC: '#' ~[\r\n]* -> channel(HIDDEN);
 WS: [ \t\n\r]+ -> skip;
 ```
 
-{% graphviz maxWidth:600 %}
-digraph G {
-	node [fillcolor="yellow:green" style=filled gradientangle=270] a0;
-  node [fillcolor="lightgreen:red"] a1;
-  node [fillcolor="lightskyblue:darkcyan"] a2;
-  node [fillcolor="cyan:lightslateblue"] a3;
 
-  // a4 会继承 a3的属性
-  a4;
+## 一些特性
+同一个属性可以声明多次，并且会覆盖掉之前的声明。属性可以用引号也可以不用
+```dot
+digraph {
+  bgcolor=yellow;
+  bgcolor = green ;
+  bgcolor = "red";
+
+  a0;
+  a1;
+}
+
+```
+{% graphviz maxWidth:300 %}
+digraph {
+  bgcolor=yellow;
+  bgcolor = green ;
+  bgcolor = "red";
+
+  a0;
+  a1;
+}
+
+{% endgraphviz %}
+
+如图所示，前面的两条 `bgcolor` 的属性被最后一条覆盖掉了，因此显示为红色。
+
+{% note default  simple %}
+当颜色使用`#`加十六进制的时候，如 `#ff00ff`，需要使用引号。
+{% endnote %}
+
+`graph`、`edge` 和 `node` 的属性定义也是一样。如下所示:
+```dot
+digraph {
+  node [shape=box fontcolor ="green"];
+  node [shape=circle color="blue"]
+
+  a0;
+  a1;
+}
+```
+
+{% graphviz maxWidth:300 %}
+digraph {
+  node [shape=box fontcolor ="green"];
+  node [shape=circle color="blue"]
+
+  a0;
+  a1;
 }
 {% endgraphviz %}
+
+如图，定义了两次 `node` 的属性，两次都定义了 `shape` 属性，因此第二次的定义覆盖掉了第一次的定义，所以顶点显示为圆形。而第一次定义了 `fontcolor` ，第二次没有重新定义，因此字体颜色依然是绿色。第二次定义了顶点的颜色为 `blue`，自然显示为蓝色。
+
+顶点也可以声明多次，覆盖方式和上面一样。而顶点无论声明多少次，都只有一个点(这一点和边不同，边声明多次则会有多条边)。
+```dot
+digraph {
+  a0 [shape=box fontcolor ="green"];
+  a0 [shape=circle color="blue"]
+
+  a0;
+  a1;
+}
+```
+{% graphviz maxWidth:300 %}
+digraph {
+  a0 [shape=box fontcolor ="green"];
+  a0 [shape=circle color="blue"];
+
+  a0;
+  a1;
+}
+{% endgraphviz %}
+
+{% note default  simple %}
+如果顶点的声明使用了引号，和不使用引号的方式相同。
+{% endnote %}
+
+```dot
+digraph {
+  "hello" -> "world";
+  hello -> "graphviz"; 
+}
+```
+{% graphviz maxWidth:300 %}
+digraph {
+  "hello" -> "world";
+  hello -> "graphviz"; 
+}
+{% endgraphviz %}
+如上图所示，这里使用带引号的方式定义了一个名为 `hello` 的顶点，又采用了不带引号的方式定义了一个同名顶点。`graphviz` 将这两个顶点视为了同一个。
+{% note default  simple %}
+可以直接使用 `utf8` 字符串定义顶点。
+{% endnote %}
+
+`dot` 里面符号的作用域是全局的。如下所示。
+```dot
+digraph {
+  subgraph cluster_0 {
+    A [shape=box];
+    A -> B;
+  };
+  subgraph cluster_1 {
+    rankdir = "LR";
+    C -> D;
+  };
+  A [shape=circle];
+  A -> C;
+}
+```
+{% graphviz maxWidth:300 %}
+digraph {
+  subgraph cluster_0 {
+    A [shape=box];
+    A -> B;
+  };
+  subgraph cluster_1 {
+    rankdir = "LR";
+    C -> D;
+  };
+  A [shape=circle];
+  A -> C;
+}
+{% endgraphviz %}
+`graphviz` 将在 `subgraph` 内外定义的名称相同的点视为同一个点。
+不能使用 `subgraph` 的名称来创建两个 `subgraph` 之间的边。
+```dot
+digraph {
+  rankdir = LR;
+  subgraph cluster_0 {};
+  subgraph cluster_1 {};
+  cluster_0 -> cluster_1;
+}
+```
+{% graphviz maxWidth:300 %}
+digraph {
+  rankdir = LR;
+  subgraph cluster_0 { A -> B; };
+  subgraph cluster_1 { C -> D;};
+  cluster_0 -> cluster_1;
+}
+{% endgraphviz %}
+
+多次声明同样的边，会得到多条边。
+```dot
+digraph {
+  rankdir = LR;
+  A -> B [arrowhead="inv"];
+  A -> B [label="edge"];
+}
+```
+{% graphviz maxWidth:300 %}
+digraph {
+  rankdir = LR;
+  A -> B [arrowhead=inv];
+  A -> B [label="edge" decorate="true"];
+}
+{% endgraphviz %}
+
+
 
 
