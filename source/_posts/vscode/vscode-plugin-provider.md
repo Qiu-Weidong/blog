@@ -6,16 +6,6 @@ tags:
 categories:
   - vscode
 ---
-
-{% graphviz maxWidth:300px %}
-digraph { 
-    rankdir = LR;
-    node [shape="circle" color="#654321:#123456"]
-    a -> v [color="#123456:#654321:#ff2465"]; 
-    u [label="张三"];
-    a -> u;
-}
-{% endgraphviz %}
 ## 获取设置
 `vscode` 工作区目录下有 `.vscode` 目录，目录下有 `settings.json` 文件，可以通过以下代码来获取设置。
 ```typescript
